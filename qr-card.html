@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>QR Menu Cards | The Tana House</title>
+  <link rel="icon" href="assets/img/logo-emblem.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --cream:#F7F2E7; --paper:#FCFAF4; --olive:#3F4A24; --olive-deep:#273016; --gold:#B8934A; --gold-light:#D8BD84; --ink:#262A1B; --soft:#5D604E;
+      --wordmark:"Cinzel","Times New Roman",serif; --display:"Cormorant Garamond",Garamond,serif; --body:"Jost","Avenir Next","Segoe UI",sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #E9E3D4; font-family: var(--body); color: var(--ink); }
+    .tools { background: var(--olive-deep); color: var(--cream); padding: 1.4rem; display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; align-items: end; justify-content: center; }
+    .tools h1 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; margin: 0; width: 100%; text-align: center; }
+    .tools p { width: 100%; text-align: center; margin: -.4rem 0 .2rem; font-size: .9rem; color: #CFD0BE; font-weight: 300; }
+    .tools label { display: grid; gap: .35rem; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-light); }
+    .tools input, .tools select { font: inherit; font-size: .95rem; padding: .7rem .9rem; border: 1px solid rgba(216,189,132,.5); background: var(--paper); color: var(--ink); min-width: 200px; }
+    .tools input[type=url] { min-width: min(420px, 80vw); }
+    .tools button { font: inherit; font-size: .78rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; padding: .85rem 1.3rem; border: 1px solid var(--gold); background: var(--gold); color: var(--olive-deep); cursor: pointer; }
+    .tools button.ghost { background: transparent; color: var(--cream); }
+    .warn { width: 100%; text-align: center; font-size: .85rem; color: #F3D9A0; }
+    .warn[hidden] { display: none; }
+    .sheet { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; padding: 32px 16px 60px; }
+
+    /* Table tent / window card: 4 x 6 in */
+    .card { width: 4in; height: 6in; background: var(--paper); position: relative; padding: .42in .38in .34in; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
+    .card::before { content: ""; position: absolute; inset: .14in; border: 1px solid var(--gold); pointer-events: none; }
+    .card .logo { width: 1.55in; }
+    .card .line { font-family: var(--wordmark); font-size: 8.5pt; letter-spacing: .3em; color: var(--gold); margin: .16in 0 .05in; text-transform: uppercase; }
+    .card h2 { font-family: var(--display); font-weight: 500; font-size: 25pt; line-height: 1.02; color: var(--olive); margin: 0; }
+    .card h2 em { color: var(--gold); }
+    .card .es { font-family: var(--display); font-style: italic; font-size: 13pt; color: var(--soft); margin-top: .03in; }
+    .card .qr { width: 1.95in; height: 1.95in; margin: .17in 0 .12in; padding: .06in; border: 1px solid #E7DFCC; background: #fff; }
+    .card .qr svg { width: 100%; height: 100%; display: block; }
+    .card .info { font-size: 8.5pt; letter-spacing: .06em; color: var(--soft); line-height: 1.55; margin-top: auto; }
+    .card .info b { font-family: var(--wordmark); font-weight: 600; letter-spacing: .14em; color: var(--olive); }
+
+    /* Round sticker: 3 in */
+    .sticker { width: 3in; height: 3in; border-radius: 50%; background: var(--olive); color: var(--cream); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
+    .sticker::before { content: ""; position: absolute; inset: .1in; border-radius: 50%; border: 1px solid var(--gold-light); }
+    .sticker .qr { width: 1.45in; height: 1.45in; background: #fff; padding: .05in; border-radius: 6px; }
+    .sticker .qr svg { width: 100%; height: 100%; display: block; }
+    .sticker .t { font-family: var(--wordmark); font-size: 7.5pt; letter-spacing: .28em; color: var(--gold-light); margin-bottom: .08in; }
+    .sticker .b { font-family: var(--display); font-size: 14pt; margin-top: .06in; }
+
+    @media print {
+      @page { margin: .4in; }
+      body { background: #fff; }
+      .tools { display: none; }
+      .sheet { padding: 0; gap: .3in; }
+      .card, .sticker { box-shadow: none; break-inside: avoid; outline: 1px dashed #ccc; outline-offset: 0; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="tools">
+    <h1>QR Menu Cards</h1>
+    <p>Print these for tables, the window or the counter. Guests scan the code to open the menu on their phone.</p>
+    <label>Menu web address <input id="url" type="url" placeholder="https://www.your-website.com/menu.html"></label>
+    <label>Card language
+      <select id="lang">
+        <option value="both">English + Spanish</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+      </select>
+    </label>
+    <label>Copies <select id="copies"><option>1</option><option selected>2</option><option>4</option></select></label>
+    <button id="print">Print</button>
+    <button id="dl" class="ghost">Download QR (SVG)</button>
+    <div class="warn" style="color:#CFD0BE">Code opens: <span id="target"></span></div>
+    <div class="warn" id="warn" hidden>Type your real menu web address above. The code below is only a sample until you do.</div>
+  </div>
+
+  <main class="sheet" id="sheet"></main>
+
+  <script src="assets/js/qrcode.js"></script>
+  <script>
+  (function () {
+    const $ = s => document.querySelector(s);
+    const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+    const urlIn = $('#url'), langIn = $('#lang'), copiesIn = $('#copies');
+
+    // When the site is online, default to this site's own menu page.
+    const live = /^https?:/.test(location.protocol) && !/claude\.ai|claudeusercontent|localhost|127\.0\.0\.1/.test(location.hostname);
+    urlIn.value = store.get('tana-qr-url') || (live ? new URL('menu.html', location.href).href : '');
+
+    const TEXT = {
+      en:   { line: 'Breakfast &amp; Lunch', h: 'Scan for our <em>menu</em>', es: '', st: 'Scan for menu' },
+      es:   { line: 'Desayuno y Almuerzo', h: 'Escanea para ver el <em>menú</em>', es: '', st: 'Ver el menú' },
+      both: { line: 'Breakfast &amp; Lunch', h: 'Scan for our <em>menu</em>', es: 'Escanea para ver el menú', st: 'Scan · Escanea' }
+    };
+    const INFO = { en: '<b>Open daily</b> · 7 AM – 3 PM', es: '<b>Abierto todos los días</b> · 7 AM – 3 PM', both: '<b>Open daily · Abierto diario</b><br>7 AM – 3 PM' };
+
+    function render() {
+      const url = urlIn.value.trim();
+      let target = url || 'https://www.example.com/menu.html';
+      if (langIn.value === 'es') target = target.replace(/menu\.html(?=$|[?#])/, 'menu-es.html');
+      $('#warn').hidden = !!url;
+      const svg = window.TanaQR(target, { level: 'M' });
+      const L = langIn.value, t = TEXT[L];
+      $('#target').textContent = target;
+      const card = `<section class="card">
+          <img class="logo" src="assets/img/logo.png" alt="The Tana House Restaurant">
+          <div class="line">${t.line}</div>
+          <h2>${t.h}</h2>${t.es ? `<div class="es">${t.es}</div>` : ''}
+          <div class="qr">${svg}</div>
+          <div class="info">${INFO[L]}<br>3055 Central Ave NE · Minneapolis</div>
+        </section>`;
+      const sticker = `<section class="sticker"><div class="t">THE TANA HOUSE</div><div class="qr">${svg}</div><div class="b">${t.st}</div></section>`;
+      const n = +copiesIn.value;
+      $('#sheet').innerHTML = card.repeat(n) + sticker.repeat(n);
+      $('#dl').dataset.svg = svg;
+    }
+
+    urlIn.addEventListener('input', () => { store.set('tana-qr-url', urlIn.value.trim()); render(); });
+    langIn.addEventListener('change', render);
+    copiesIn.addEventListener('change', render);
+    $('#print').addEventListener('click', () => { try { window.print(); } catch (e) {} });
+    $('#dl').addEventListener('click', () => {
+      const blob = new Blob([$('#dl').dataset.svg], { type: 'image/svg+xml' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'tana-house-menu-qr.svg';
+      document.body.appendChild(a); a.click(); a.remove();
+    });
+    render();
+  })();
+  </script>
+</body>
+</html>

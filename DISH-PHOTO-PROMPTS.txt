@@ -1,0 +1,242 @@
+THE TANA HOUSE — DISH PHOTO PROMPTS
+===================================
+How to use
+----------
+1. Paste a prompt into an image generator (ChatGPT, Gemini, Midjourney, etc.).
+2. Save the result as a .jpg with the exact file name shown.
+3. Put it in:  assets/img/dishes/
+   All 62 menu items now have local illustrations. Replacing a file updates its thumbnail in both languages.
+
+Big section photos (the arch photos) work the same way: save as assets/img/photos/<name>.jpg
+   pancakes, waffles, omelets, huevos, benedict, plates, burgers, sandwiches, soups, drinks, desserts, hero
+   Only existing local section photos are used; there are no external stock-photo fallbacks.
+
+New menu thumbnails (November 2026)
+   58 new illustrations were created with the built-in image_gen tool, completing all 62 items.
+   Exact generation prompts: assets/img/dishes/generation-prompts.json.
+   New files are optimized to 320 x 320 JPEG and displayed at 80px / 64px on desktop / mobile.
+
+Tip: AI pictures are only approximate. Customers notice when a plate looks different in person,
+so the best long-term option is photographing your real plates near a window, then using the same file names.
+
+Style line (already included in every prompt below):
+Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Classic Pancakes
+
+File: original-pancakes.jpg
+Prompt: Original Pancakes: Chef's old-fashioned homemade batter, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: blueberry-pancakes.jpg
+Prompt: Blueberry Pancakes: Blueberries, blueberry compote and homemade whipped cream, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: strawberry-pancakes.jpg
+Prompt: Strawberry Pancakes: Buttermilk pancakes with strawberry sauce, whipped cream and powdered sugar, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: banana-pancakes.jpg
+Prompt: Banana Pancakes: Original pancakes topped with fresh banana slices, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: chocolate-chip-pancakes.jpg
+Prompt: Chocolate Chip Pancakes: Chocolate pancakes sprinkled with chocolate chips, topped with whipped cream and powdered sugar, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: peanut-butter-pecan-pancakes.jpg
+Prompt: Peanut Butter-Pecan Pancakes: Buttermilk pancakes topped with peanut butter and pecans, whipped cream and powdered sugar, a stack of three pancakes. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Waffles & French Toast
+
+File: waffles.jpg
+Prompt: Waffles: Golden and crisp, dusted with powdered sugar and homemade whipped cream. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: french-toast.jpg
+Prompt: French Toast: Grilled sourdough dipped in a rich egg batter, with homemade whipped cream and a dusting of powdered sugar. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Omelets
+
+File: ham-cheese-omelet.jpg
+Prompt: Ham & Cheese Omelet: Diced honey maple ham, American and cheddar cheese, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: denver-omelet.jpg
+Prompt: Denver Omelet: Ham, bell pepper, onion and cheddar cheese, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: meat-lover-s-omelet.jpg
+Prompt: Meat Lover's Omelet: Bacon, pork link sausage, ham and cheddar cheese, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: everything-omelet.jpg
+Prompt: Everything Omelet: Bacon, pork sausage, ham, mushroom, spinach, bell pepper, onion, zucchini and cheddar cheese, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: vegetarian-omelet.jpg
+Prompt: Vegetarian Omelet: Mushroom, spinach, bell pepper, onion and zucchini, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: skinny-omelet.jpg
+Prompt: Skinny Omelet: Egg whites, mushroom, spinach, bell pepper, onion, zucchini and cheddar cheese, with a side of golden hashbrowns and a slice of toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### ¡Huevos Días!
+
+File: huevos-con-jamon.jpg
+Prompt: Huevos con Jamón: Traditional scrambled ham and eggs. Served with refried black beans and corn or flour tortillas. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: huevos-a-la-mexicana.jpg
+Prompt: Huevos a la Mexicana: Two scrambled eggs with tomato, jalapeño and onion. Served with refried black beans. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: huevos-con-chorizo.jpg
+Prompt: Huevos con Chorizo: Two scrambled eggs with authentic Mexican sausage. Served with refried black beans, avocado salsa and corn or flour tortillas. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: huevos-rancheros.jpg
+Prompt: Huevos Rancheros: Two semi-fried corn tortillas topped with fried eggs and salsa ranchera, avocado salsa, sour cream and queso fresco. Served with refried black beans. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: chilaquiles-con-huevos.jpg
+Prompt: Chilaquiles con Huevos: Flash-fried corn tortillas in your choice of green or red salsa, topped with epazote sour cream and queso fresco. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: huevos-divorciados.jpg
+Prompt: Huevos Divorciados: Flash-fried corn tortillas with half green and half red salsa, topped with refried beans, fried egg and cecina (thin-cut cured steak), sour cream and queso fresco. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: sopes-con-cecina.jpg
+Prompt: Sopes con Cecina: Homemade pinched corn patties filled with green salsa, sour cream, cotija cheese and chopped onions. Served with cecina, the famous hand-sliced cured meat from Morelos, México. Authentic Mexican breakfast presentation. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Breakfast Plates
+
+File: turkey-bacon-eggs.jpg
+Prompt: Turkey Bacon & Eggs: Three slices of turkey bacon and two large eggs, with hashbrowns and toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: pork-bacon-eggs.jpg
+Prompt: Pork Bacon & Eggs: Four slices of bacon and two large fresh eggs, served any style, with hashbrowns and toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: skillet-corned-beef-hash-eggs.jpg
+Prompt: Skillet Corned Beef Hash & Eggs: Homemade corned beef hash, a blend of corned beef, potatoes and onions. Served with two eggs any style, with hashbrowns and toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: skillet-grilled-chopped-steak-eggs.jpg
+Prompt: Skillet Grilled Chopped Steak & Eggs: Seasoned breakfast potatoes, bell peppers, onion, jalapeño, cheddar cheese and two large eggs any style, with hashbrowns and toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: breakfast-sandwich.jpg
+Prompt: Breakfast Sandwich: White bread, two scrambled eggs and American cheese. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: all-american-breakfast.jpg
+Prompt: All American Breakfast: Two thick slices of pork bacon or two turkey bacon, with two large eggs served any style, with hashbrowns and toast. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: 6oz-ribeye-steak-eggs.jpg
+Prompt: 6oz Ribeye Steak & Eggs: Grilled ribeye steak, two eggs and hashbrowns, served any style. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: eggs-benedict.jpg
+Prompt: Eggs Benedict: Toasted English muffin with Canadian bacon, poached eggs and hollandaise. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Handcrafted Burgers
+
+File: classic-cheeseburger.jpg
+Prompt: Classic Cheeseburger: Homemade fresh patty, American cheese, mayonnaise, lettuce and tomato, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: mushroom-swiss-burger.jpg
+Prompt: Mushroom & Swiss Burger: Garlic aioli, lettuce, tomato, baby portobello mushrooms and Swiss cheese, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: the-ultimate-bbq-burger.jpg
+Prompt: The Ultimate BBQ Burger: Mayonnaise, lettuce, tomato, BBQ sauce, caramelized onions, cheddar cheese and bacon, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: patty-melt.jpg
+Prompt: Patty Melt: Garlic aioli, caramelized onions, American and Swiss cheese on grilled Texas toast, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Sandwiches
+
+File: blt.jpg
+Prompt: BLT: White bread, mayo, turkey or pork bacon, lettuce and tomato, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: reuben.jpg
+Prompt: Reuben: Corned beef, sauerkraut, thousand island dressing and Swiss cheese on grilled marble rye, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: rachel.jpg
+Prompt: Rachel: Turkey, sauerkraut, thousand island dressing and Swiss cheese on grilled marble rye, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: philly-roast-beef.jpg
+Prompt: Philly Roast Beef: Hoagie bread, thinly sliced roast beef, bell pepper, onion and provolone cheese, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: chicken-club.jpg
+Prompt: Chicken Club: Grilled chicken and American cheese on white bread with lettuce, bacon and tomato, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: meatball-sub.jpg
+Prompt: Meatball Sub: Hoagie bread, beef meatballs in marinara sauce, topped with parmesan and provolone, with a side of French fries. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Soups & Salads
+
+File: minnesota-wild-rice-soup.jpg
+Prompt: Minnesota Wild Rice Soup: A classic creamy wild rice soup with savory vegetables and herbs (served in a white bowl). Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: chicken-noodle-soup.jpg
+Prompt: Chicken Noodle Soup: Traditional chicken noodle soup with fresh vegetables (served in a white bowl). Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: house-salad.jpg
+Prompt: House Salad: Baby mixed greens, cucumber, cherry tomato and cured red onions with your choice of dressing. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: caesar-salad.jpg
+Prompt: Caesar Salad: Crisp romaine tossed in creamy Caesar dressing with crunchy croutons, parmesan and black pepper. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Sides
+
+File: 1-egg-any-style.jpg
+Prompt: one sunny-side-up fried egg on a small plate. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: pork-or-turkey-bacon-3.jpg
+Prompt: three crispy strips of bacon on a small plate. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: pancake-1.jpg
+Prompt: a single golden buttermilk pancake with a pat of butter. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: hashbrowns.jpg
+Prompt: a portion of crispy golden shredded hashbrowns. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Juices & Beverages
+
+File: fresh-squeezed-orange-juice.jpg
+Prompt: a tall glass of fresh squeezed orange juice with pulp. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: apple-cranberry-or-tomato-juice.jpg
+Prompt: three small glasses of apple, cranberry and tomato juice side by side. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: coffee-refills.jpg
+Prompt: a white diner mug of black drip coffee with steam. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: lattes-cappuccinos.jpg
+Prompt: a cappuccino with latte art in a white cup and saucer. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: hot-chocolate.jpg
+Prompt: a mug of hot chocolate. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: herbal-tea.jpg
+Prompt: a glass cup of herbal tea with a tea bag. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: milk.jpg
+Prompt: a tall glass of cold milk. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: lemonade.jpg
+Prompt: a glass of lemonade with ice and a lemon slice. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: regular-coke.jpg
+Prompt: a glass of cola with ice. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: diet-coke.jpg
+Prompt: a glass of cola with ice. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: sprite.jpg
+Prompt: a glass of clear lemon-lime soda with ice. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: orange-pop.jpg
+Prompt: a glass of orange soda with ice. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+
+### Desserts
+
+File: cheesecake.jpg
+Prompt: Cheesecake: Strawberry sauce topped with whipped cream. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: cookie-sundae.jpg
+Prompt: Cookie Sundae: Chocolate chip cookies and vanilla ice cream, drizzled with chocolate sauce and topped with whipped cream. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.
+
+File: churro-bites-vanilla-ice-cream.jpg
+Prompt: Churro Bites & Vanilla Ice Cream: Fried dough dusted with cinnamon sugar, with homemade caramel sauce. Professional restaurant food photograph, 45-degree angle, served on a simple white ceramic plate on a light wooden table, soft natural morning window light, shallow depth of field, warm appetizing colors, realistic portion size, no text, no logos, no hands, square 1:1.

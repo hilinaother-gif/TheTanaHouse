@@ -1,0 +1,34 @@
+/* One language picker shared by all five editions. */
+.language-picker { position: relative; flex-shrink: 0; }
+.language-picker summary { display: flex; align-items: center; justify-content: center; gap: .35rem; min-width: 66px; height: 44px; padding: .4rem .55rem; border: 1px solid var(--linen); border-radius: 11px; color: var(--olive); font-size: .76rem; font-weight: 500; cursor: pointer; list-style: none; }
+.language-picker summary::-webkit-details-marker { display: none; }
+.language-picker summary > svg { width: 16px; height: 16px; }
+.language-picker summary:hover, .language-picker[open] summary { background: var(--paper); border-color: #CCD3BD; }
+.language-chevron { font-size: 1rem; line-height: .8; }
+.language-options { position: absolute; top: calc(100% + .6rem); right: 0; width: 205px; padding: .5rem; border: 1px solid #DFE3D5; border-radius: 13px; background: var(--paper); box-shadow: 0 12px 35px rgb(40 50 28 / 12%); z-index: 80; }
+.language-options .lang-switch { display: flex; align-items: center; justify-content: space-between; width: auto; height: auto; min-height: 44px; margin: 0; padding: .6rem .8rem; border: 0; border-radius: 8px; font-family: "Jost", "Noto Sans Ethiopic", sans-serif; font-size: .9rem; letter-spacing: 0; font-weight: 400; }
+.language-options .lang-switch:hover { background: #EEF1E4; }
+.language-options .lang-switch[aria-current="page"] { background: #E8EDDC; color: var(--olive); font-weight: 500; }
+html:lang(am) { --body: "Noto Sans Ethiopic", "Jost", sans-serif; --display: "Noto Serif Ethiopic", Georgia, serif; }
+html:lang(am) h1, html:lang(am) h2 { line-height: 1.3; }
+html:lang(am) .hero h1 { font-size: clamp(2.3rem, 4.1vw, 4.1rem); }
+html:lang(am) .menu-page .menu-hero h1 { font-size: clamp(2.8rem, 4.5vw, 4.5rem); line-height: 1.3; }
+html:lang(am) .menu-page .item h3 { line-height: 1.6; }
+html:lang(am) .menu-page .item p { line-height: 1.85; }
+html:lang(am) .menu-page .menu-section-head h2 { font-size: clamp(1.8rem, 2.8vw, 2.5rem); line-height: 1.4; }
+html:lang(am) .menu-page .item .price { line-height: 1.75; }
+html:lang(so) .hero h1, html:lang(vi) .hero h1 { font-size: clamp(2.6rem, 4.6vw, 4.65rem); }
+@media (max-width: 1120px) { .language-picker { margin-left: auto; } }
+@media (max-width: 640px) {
+  .language-picker summary { min-width: 62px; padding-inline: .4rem; gap: .25rem; }
+  .language-picker summary > svg { width: 14px; height: 14px; }
+  html:lang(am) .hero h1 { font-size: clamp(2.2rem, 8.5vw, 3.15rem); }
+  html:lang(am) .menu-page .menu-hero h1 { font-size: 2.8rem; }
+  html:lang(am) .brand-sub { letter-spacing: .06em; font-size: .55rem; }
+  html:lang(am) .menu-page .menu-section-head h2 { font-size: 1.85rem; }
+  html:lang(so) .hero h1, html:lang(vi) .hero h1 { font-size: clamp(2.5rem, 9.6vw, 3.5rem); }
+}
+@media (max-width: 360px) {
+  .language-picker summary { min-width: 54px; }
+  .language-picker summary > svg { display: none; }
+}
