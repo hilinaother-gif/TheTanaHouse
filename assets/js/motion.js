@@ -8,7 +8,7 @@
   const active = new Map();
   const easing = 'cubic-bezier(.2,.7,.2,1)';
   const rise = [
-    { opacity: 0, transform: 'translate3d(0, 20px, 0)' },
+    { opacity: 0, transform: 'translate3d(0, 28px, 0)' },
     { opacity: 1, transform: 'none' }
   ];
   const targets = Array.from(document.querySelectorAll([
@@ -20,7 +20,7 @@
   ].join(', ')));
 
   document.querySelectorAll('.fav-grid, .category-links, .story-points, .feature-list, .items, .gallery-grid, .review-grid').forEach(group => {
-    Array.from(group.children).forEach((element, index) => delays.set(element, Math.min(index, 3) * 65));
+    Array.from(group.children).forEach((element, index) => delays.set(element, Math.min(index, 3) * 90));
   });
   targets.forEach(element => { element.dataset.motion = 'reveal'; });
 
@@ -40,7 +40,11 @@
   function reveal(element, options = {}) {
     seen.add(element);
     element.dataset.motionRevealed = 'true';
-    animate(element, rise, { delay: delays.get(element) || 0, ...options });
+    const frames = element.matches('.story-art, .menu-section-art .photo, .gallery-grid > figure') ? [
+      { opacity: 0, transform: 'translate3d(0, 24px, 0) scale(.96)' },
+      { opacity: 1, transform: 'none' }
+    ] : rise;
+    animate(element, frames, { delay: delays.get(element) || 0, ...options });
   }
 
   const observer = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
@@ -61,22 +65,24 @@
     });
   }
 
-  if (preference.matches) {
-    stopMotion();
-  } else {
+  function startMotion() {
+    if (preference.matches) { stopMotion(); return; }
     const intro = document.querySelectorAll('.hero-copy > *, .menu-hero .eyebrow, .menu-hero h1, .menu-hero > .wrap > p, .menu-intro-lead, .menu-intro-meta, .menu-highlight');
-    intro.forEach((element, index) => reveal(element, { delay: Math.min(index, 4) * 75, duration: 650 }));
+    intro.forEach((element, index) => reveal(element, { delay: Math.min(index, 4) * 100, duration: 800 }));
     const hero = document.querySelector('.hero-art');
     if (hero) {
       animate(hero, [
-        { opacity: 0, transform: 'translate3d(0, 18px, 0) scale(.975)' },
+        { opacity: 0, transform: 'translate3d(0, 28px, 0) scale(.96) rotate(1deg)' },
         { opacity: 1, transform: 'none' }
-      ], { duration: 900, delay: 100 });
+      ], { duration: 1100, delay: 160 });
       const image = hero.querySelector('.photo img');
-      if (image) animate(image, [{ transform: 'scale(1.045)' }, { transform: 'scale(1)' }], { duration: 1800 });
+      if (image) animate(image, [{ transform: 'scale(1.075)' }, { transform: 'scale(1)' }], { duration: 2600 });
     }
     if (observer) targets.forEach(element => observer.observe(element));
   }
+
+  if (window.TANA_WELCOME_PENDING) document.addEventListener('tana:welcome-dismissed', startMotion, { once: true });
+  else startMotion();
 
   // A live preference change stops active effects immediately.
   preference.addEventListener('change', event => { if (event.matches) stopMotion(); });

@@ -40,7 +40,7 @@ h1, h2, h3, p, address, .category-links a { overflow-wrap: anywhere; }
   .menu-page .menu-tabs {
     display: flex; align-items: center; gap: .7rem; top: var(--header-height);
     z-index: 40; margin-bottom: 2rem; padding-block: .6rem;
-    border-bottom: 1px solid #DFE3D5;
+    border-bottom: 1px solid var(--border);
   }
   .menu-nav-heading { order: 2; flex: 0 0 44px; margin: 0; }
   .menu-nav-heading h2, .menu-sidebar-note { display: none; }
@@ -67,8 +67,8 @@ h1, h2, h3, p, address, .category-links a { overflow-wrap: anywhere; }
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     max-height: var(--navigation-space, calc(100dvh - var(--header-height) - 16px));
     overflow-y: auto; overscroll-behavior: contain;
-    padding: .75rem var(--page-gutter) 1.25rem; background: var(--paper);
-    border-bottom: 1px solid var(--linen); box-shadow: 0 18px 28px rgb(40 50 28 / 8%);
+    padding: .75rem var(--page-gutter) 1.25rem; background: var(--surface);
+    border-bottom: 1px solid var(--border); box-shadow: 0 18px 28px rgb(var(--shadow-color) / 8%);
   }
   .nav-links li + li { margin-top: .3rem; }
   .nav-links a:not(.btn) { padding: .65rem; font-size: 1rem; }
@@ -96,16 +96,16 @@ h1, h2, h3, p, address, .category-links a { overflow-wrap: anywhere; }
     right: max(1rem, env(safe-area-inset-right, 0px));
     bottom: calc(.65rem + env(safe-area-inset-bottom, 0px));
     max-width: 480px; margin-inline: auto; padding: .4rem;
-    background: var(--paper); border: 1px solid #DCE0D1;
-    border-radius: 16px; box-shadow: 0 5px 30px rgb(40 50 28 / 16%);
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; box-shadow: 0 5px 30px rgb(var(--shadow-color) / 16%);
   }
   .actionbar a {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: .25rem; min-height: 54px; padding: .4rem; border-radius: 11px;
-    color: var(--olive); font-size: .73rem; text-decoration: none;
+    color: var(--accent); font-size: .73rem; text-decoration: none;
   }
   .actionbar svg { width: 19px; height: 19px; }
-  .actionbar .ab-menu { background: var(--olive); color: var(--paper); }
+  .actionbar .ab-menu { background: var(--accent); color: var(--surface); }
   .nav-open .actionbar, .language-open .actionbar, .search-focused .actionbar {
     visibility: hidden; pointer-events: none;
   }

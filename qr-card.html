@@ -10,41 +10,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --cream:#F7F2E7; --paper:#FCFAF4; --olive:#3F4A24; --olive-deep:#273016; --gold:#B8934A; --gold-light:#D8BD84; --ink:#262A1B; --soft:#5D604E;
+    :root { --canvas:#F9E7C9; --surface:#FFF6E8; --accent:#82400C; --accent-deep:#2F180D; --accent-warm:#984B18; --ochre:#D3962B; --ink:#0A0400; --soft:#674F3C;
       --wordmark:"Cinzel","Times New Roman",serif; --display:"Cormorant Garamond",Garamond,serif; --body:"Jost","Avenir Next","Segoe UI",sans-serif; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #E9E3D4; font-family: var(--body); color: var(--ink); }
-    .tools { background: var(--olive-deep); color: var(--cream); padding: 1.4rem; display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; align-items: end; justify-content: center; }
+    body { margin: 0; background: #EDCFAA; font-family: var(--body); color: var(--ink); }
+    .tools { background: var(--accent-deep); color: var(--canvas); padding: 1.4rem; display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; align-items: end; justify-content: center; }
     .tools h1 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; margin: 0; width: 100%; text-align: center; }
-    .tools p { width: 100%; text-align: center; margin: -.4rem 0 .2rem; font-size: .9rem; color: #CFD0BE; font-weight: 300; }
-    .tools label { display: grid; gap: .35rem; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-light); }
-    .tools input, .tools select { font: inherit; font-size: .95rem; padding: .7rem .9rem; border: 1px solid rgba(216,189,132,.5); background: var(--paper); color: var(--ink); min-width: 200px; }
+    .tools p { width: 100%; text-align: center; margin: -.4rem 0 .2rem; font-size: .9rem; color: #E2C8AA; font-weight: 300; }
+    .tools label { display: grid; gap: .35rem; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ochre); }
+    .tools input, .tools select { font: inherit; font-size: .95rem; padding: .7rem .9rem; border: 1px solid rgba(211,150,43,.5); background: var(--surface); color: var(--ink); min-width: 200px; }
     .tools input[type=url] { min-width: min(420px, 80vw); }
-    .tools button { font: inherit; font-size: .78rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; padding: .85rem 1.3rem; border: 1px solid var(--gold); background: var(--gold); color: var(--olive-deep); cursor: pointer; }
-    .tools button.ghost { background: transparent; color: var(--cream); }
-    .warn { width: 100%; text-align: center; font-size: .85rem; color: #F3D9A0; }
+    .tools button { font: inherit; font-size: .78rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; padding: .85rem 1.3rem; border: 1px solid var(--accent-warm); background: var(--ochre); color: var(--accent-deep); cursor: pointer; }
+    .tools button.ghost { background: transparent; color: var(--canvas); }
+    .warn { width: 100%; text-align: center; font-size: .85rem; color: #F9E7C9; }
     .warn[hidden] { display: none; }
     .sheet { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; padding: 32px 16px 60px; }
 
     /* Table tent / window card: 4 x 6 in */
-    .card { width: 4in; height: 6in; background: var(--paper); position: relative; padding: .42in .38in .34in; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
-    .card::before { content: ""; position: absolute; inset: .14in; border: 1px solid var(--gold); pointer-events: none; }
+    .card { width: 4in; height: 6in; background: var(--surface); position: relative; padding: .42in .38in .34in; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
+    .card::before { content: ""; position: absolute; inset: .14in; border: 1px solid var(--accent-warm); pointer-events: none; }
+    .card::after { content: ""; position: absolute; top: .16in; left: .16in; right: .16in; height: .2in; background: var(--accent-deep) url("assets/img/tibeb-border.svg") repeat-x center / auto 100%; pointer-events: none; }
     .card .logo { width: 1.55in; }
-    .card .line { font-family: var(--wordmark); font-size: 8.5pt; letter-spacing: .3em; color: var(--gold); margin: .16in 0 .05in; text-transform: uppercase; }
-    .card h2 { font-family: var(--display); font-weight: 500; font-size: 25pt; line-height: 1.02; color: var(--olive); margin: 0; }
-    .card h2 em { color: var(--gold); }
+    .card .line { font-family: var(--wordmark); font-size: 8.5pt; letter-spacing: .3em; color: var(--accent-warm); margin: .16in 0 .05in; text-transform: uppercase; }
+    .card h2 { font-family: var(--display); font-weight: 500; font-size: 25pt; line-height: 1.02; color: var(--accent); margin: 0; }
+    .card h2 em { color: var(--accent-warm); }
     .card .es { font-family: var(--display); font-style: italic; font-size: 13pt; color: var(--soft); margin-top: .03in; }
-    .card .qr { width: 1.95in; height: 1.95in; margin: .17in 0 .12in; padding: .06in; border: 1px solid #E7DFCC; background: #fff; }
+    .card .qr { width: 1.95in; height: 1.95in; margin: .17in 0 .12in; padding: .06in; border: 1px solid #DEC2A2; background: #fff; }
     .card .qr svg { width: 100%; height: 100%; display: block; }
     .card .info { font-size: 8.5pt; letter-spacing: .06em; color: var(--soft); line-height: 1.55; margin-top: auto; }
-    .card .info b { font-family: var(--wordmark); font-weight: 600; letter-spacing: .14em; color: var(--olive); }
+    .card .info b { font-family: var(--wordmark); font-weight: 600; letter-spacing: .14em; color: var(--accent); }
 
     /* Round sticker: 3 in */
-    .sticker { width: 3in; height: 3in; border-radius: 50%; background: var(--olive); color: var(--cream); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
-    .sticker::before { content: ""; position: absolute; inset: .1in; border-radius: 50%; border: 1px solid var(--gold-light); }
+    .sticker { width: 3in; height: 3in; border-radius: 50%; background: var(--accent); color: var(--canvas); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; box-shadow: 0 20px 40px -25px rgba(0,0,0,.5); }
+    .sticker::before { content: ""; position: absolute; inset: .1in; border-radius: 50%; border: 1px solid var(--ochre); }
     .sticker .qr { width: 1.45in; height: 1.45in; background: #fff; padding: .05in; border-radius: 6px; }
     .sticker .qr svg { width: 100%; height: 100%; display: block; }
-    .sticker .t { font-family: var(--wordmark); font-size: 7.5pt; letter-spacing: .28em; color: var(--gold-light); margin-bottom: .08in; }
+    .sticker .t { font-family: var(--wordmark); font-size: 7.5pt; letter-spacing: .28em; color: var(--canvas); margin-bottom: .08in; }
     .sticker .b { font-family: var(--display); font-size: 14pt; margin-top: .06in; }
 
     @media print {
@@ -72,7 +73,7 @@
     <label>Copies <select id="copies"><option>1</option><option selected>2</option><option>4</option></select></label>
     <button id="print">Print</button>
     <button id="dl" class="ghost">Download QR (SVG)</button>
-    <div class="warn" style="color:#CFD0BE">Code opens: <span id="target"></span></div>
+    <div class="warn" style="color:#E2C8AA">Code opens: <span id="target"></span></div>
     <div class="warn" id="warn" hidden>Type your real menu web address above. The code below is only a sample until you do.</div>
   </div>
 

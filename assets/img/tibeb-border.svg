@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="36" viewBox="0 0 144 36" fill="none">
+  <!-- Original geometric border inspired by Ethiopian tibeb weaving. -->
+  <path fill="#2F180D" d="M0 0h144v36H0z"/>
+  <path stroke="#D3962B" d="M0 2.5h144M0 33.5h144"/>
+  <path stroke="#984B18" d="M0 5.5h144M0 30.5h144"/>
+  <g fill="#D3962B">
+    <path d="M30 7h12v4h6v4h6v6h-6v4h-6v4H30v-4h-6v-4h-6v-6h6v-4h6Z"/>
+    <path d="M102 7h12v4h6v4h6v6h-6v4h-6v4h-12v-4h-6v-4h-6v-6h6v-4h6Z"/>
+  </g>
+  <g fill="#82400C">
+    <path d="m36 10 12 8-12 8-12-8Z"/>
+    <path d="m108 10 12 8-12 8-12-8Z"/>
+  </g>
+  <g fill="#F9E7C9">
+    <path d="m36 14 6 4-6 4-6-4Zm72 0 6 4-6 4-6-4Z"/>
+    <path d="m0 12 8 6-8 6-8-6Zm72 0 8 6-8 6-8-6Zm72 0 8 6-8 6-8-6Z"/>
+  </g>
+  <g stroke="#D3962B" stroke-width="1.5">
+    <path d="m9 12 9 6-9 6m54-12-9 6 9 6m18-12 9 6-9 6m54-12-9 6 9 6"/>
+  </g>
+  <g stroke="#F9E7C9" stroke-opacity=".16" stroke-width=".5">
+    <path d="M0 9h144M0 12h144M0 15h144M0 18h144M0 21h144M0 24h144M0 27h144"/>
+  </g>
+</svg>

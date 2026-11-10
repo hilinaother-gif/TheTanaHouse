@@ -9,7 +9,7 @@ Files
   index-so.html, menu-so.html     Somali pages
   index-vi.html, menu-vi.html     Vietnamese pages
   qr-card.html                    Printable QR menu cards (not linked on the site; open it directly)
-  assets/css/styles.css      Olive & gold theme from the logo
+  assets/css/styles.css      Peach, burnt orange, ochre and espresso palette
   assets/css/menu.css        Menu browsing layout, category sidebar and responsive dish cards
   assets/css/responsive.css  Fluid gutters, adaptive cards, tablet layouts and short-screen navigation
   assets/js/main.js          Local-time greetings, opening status, mobile navigation, menu search and filters
@@ -96,3 +96,29 @@ Responsive layout
   favourites/footer sections use one column. Gutters account for device safe areas.
   Header menus scroll within the available screen height. The mobile quick-action bar
   becomes compact in landscape and stays out of the way of open menus and search.
+
+Color refresh (November 2026)
+  The palette takes its direction from https://earthgirlcreative.com/: peach #F9E7C9,
+  burnt orange #82400C and ochre #D3962B, with espresso for dark sections.
+  Shared CSS color tokens keep the homepage, menu and all five languages consistent.
+  Menu controls, woven SVG details, browser theme colors and QR cards use the new palette.
+  Original logo artwork is preserved.
+
+Ethiopian pattern details
+  Original tibeb-inspired stepped diamonds carry through every language.
+  Section breaks are clean, with no full-width woven divider bands.
+  Printed QR cards retain the small border in assets/img/tibeb-border.svg.
+  The light and dark section patterns use section-weave.svg and section-arches.svg.
+  Faint motifs fade out near section edges, leaving clear space around copy and dish images.
+  Decorative site patterns are hidden for printing and forced-color accessibility modes;
+  QR card bands remain in the printed cards.
+  Weaving reference: https://digitalcommons.unl.edu/tsaconf/168/
+
+Welcome and motion
+  The first homepage or menu opened in a tab shows a localized welcome once per session.
+  The original greeting reads: “May your coffee be warm, your plate be full, and your day
+  a little brighter.” Edit welcome strings in assets/js/languages.js.
+  assets/js/welcome.js handles the native dialog, close button, Escape, backdrop dismissal
+  and menu link. Visitors can continue immediately; the dialog never closes on a timer.
+  Page entrances begin after dismissal. Sections reveal on scroll, food photos ease into
+  place, and buttons/cards respond on hover. Reduced-motion preferences stop animations.
