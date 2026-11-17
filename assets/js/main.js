@@ -58,7 +58,8 @@ const TIMEZONE = "America/Chicago";
     const bottom = (viewport ? viewport.offsetTop + viewport.height : innerHeight) - 12;
     if (header) {
       const bounds = header.getBoundingClientRect();
-      const height = Math.ceil(bounds.height) + 'px';
+      const pinned = ['sticky', 'fixed'].includes(getComputedStyle(header).position);
+      const height = (pinned ? Math.ceil(bounds.height) : 0) + 'px';
       if (document.documentElement.style.getPropertyValue('--header-height') !== height) document.documentElement.style.setProperty('--header-height', height);
       document.documentElement.style.setProperty('--navigation-space', Math.max(44, bottom - bounds.bottom) + 'px');
     }

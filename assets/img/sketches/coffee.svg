@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 88" fill="none">
+  <title>A small coffee cup sketch</title>
+  <g stroke="#29473C" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 36c-1 10 1 23 6 29 7 7 27 8 35 0 5-6 7-19 6-29"/>
+    <path d="M28 35c3-7 44-7 47 0 1 7-44 8-47 0Z"/>
+    <path d="M76 41c22-6 24 22-3 22m4-17c12-3 13 11-1 12"/>
+    <path d="M28 67c-18 2-16 7-6 10 17 6 54 6 69-2 9-4 1-7-16-8"/>
+    <path d="M27 76c15 3 35 4 49 0M35 49l2 12m3-10 2 12" stroke-opacity=".5"/>
+  </g>
+  <g stroke="#C8AD75" stroke-width="1.65" stroke-linecap="round">
+    <path d="M43 25c-10-9 8-11 0-20M56 23c8-7-7-10 1-17M67 26c-5-5 5-7 2-12"/>
+  </g>
+</svg>

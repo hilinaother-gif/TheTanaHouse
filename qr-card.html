@@ -8,21 +8,21 @@
   <link rel="icon" href="assets/img/logo-emblem.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Fraunces:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --canvas:#F9E7C9; --surface:#FFF6E8; --accent:#82400C; --accent-deep:#2F180D; --accent-warm:#984B18; --ochre:#D3962B; --ink:#0A0400; --soft:#674F3C;
-      --wordmark:"Cinzel","Times New Roman",serif; --display:"Cormorant Garamond",Garamond,serif; --body:"Jost","Avenir Next","Segoe UI",sans-serif; }
+    :root { --canvas:#F5F2EB; --surface:#FCFAF6; --accent:#29473C; --accent-deep:#142C25; --accent-warm:#78603A; --ochre:#C8AD75; --ink:#202C26; --soft:#5F665E;
+      --wordmark:"Cinzel","Times New Roman",serif; --display:"Fraunces",Georgia,serif; --body:"Jost","Avenir Next","Segoe UI",sans-serif; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #EDCFAA; font-family: var(--body); color: var(--ink); }
+    body { margin: 0; background: #E2E4D9; font-family: var(--body); color: var(--ink); }
     .tools { background: var(--accent-deep); color: var(--canvas); padding: 1.4rem; display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; align-items: end; justify-content: center; }
     .tools h1 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; margin: 0; width: 100%; text-align: center; }
-    .tools p { width: 100%; text-align: center; margin: -.4rem 0 .2rem; font-size: .9rem; color: #E2C8AA; font-weight: 300; }
+    .tools p { width: 100%; text-align: center; margin: -.4rem 0 .2rem; font-size: .9rem; color: #C9D0C5; font-weight: 300; }
     .tools label { display: grid; gap: .35rem; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ochre); }
-    .tools input, .tools select { font: inherit; font-size: .95rem; padding: .7rem .9rem; border: 1px solid rgba(211,150,43,.5); background: var(--surface); color: var(--ink); min-width: 200px; }
+    .tools input, .tools select { font: inherit; font-size: .95rem; padding: .7rem .9rem; border: 1px solid rgba(200,173,117,.5); background: var(--surface); color: var(--ink); min-width: 200px; }
     .tools input[type=url] { min-width: min(420px, 80vw); }
     .tools button { font: inherit; font-size: .78rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; padding: .85rem 1.3rem; border: 1px solid var(--accent-warm); background: var(--ochre); color: var(--accent-deep); cursor: pointer; }
     .tools button.ghost { background: transparent; color: var(--canvas); }
-    .warn { width: 100%; text-align: center; font-size: .85rem; color: #F9E7C9; }
+    .warn { width: 100%; text-align: center; font-size: .85rem; color: #F5F2EB; }
     .warn[hidden] { display: none; }
     .sheet { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; padding: 32px 16px 60px; }
 
@@ -35,7 +35,7 @@
     .card h2 { font-family: var(--display); font-weight: 500; font-size: 25pt; line-height: 1.02; color: var(--accent); margin: 0; }
     .card h2 em { color: var(--accent-warm); }
     .card .es { font-family: var(--display); font-style: italic; font-size: 13pt; color: var(--soft); margin-top: .03in; }
-    .card .qr { width: 1.95in; height: 1.95in; margin: .17in 0 .12in; padding: .06in; border: 1px solid #DEC2A2; background: #fff; }
+    .card .qr { width: 1.95in; height: 1.95in; margin: .17in 0 .12in; padding: .06in; border: 1px solid #DDD8CB; background: #fff; }
     .card .qr svg { width: 100%; height: 100%; display: block; }
     .card .info { font-size: 8.5pt; letter-spacing: .06em; color: var(--soft); line-height: 1.55; margin-top: auto; }
     .card .info b { font-family: var(--wordmark); font-weight: 600; letter-spacing: .14em; color: var(--accent); }
@@ -73,7 +73,7 @@
     <label>Copies <select id="copies"><option>1</option><option selected>2</option><option>4</option></select></label>
     <button id="print">Print</button>
     <button id="dl" class="ghost">Download QR (SVG)</button>
-    <div class="warn" style="color:#E2C8AA">Code opens: <span id="target"></span></div>
+    <div class="warn" style="color:#C9D0C5">Code opens: <span id="target"></span></div>
     <div class="warn" id="warn" hidden>Type your real menu web address above. The code below is only a sample until you do.</div>
   </div>
 

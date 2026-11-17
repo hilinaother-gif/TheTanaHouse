@@ -139,8 +139,6 @@ def finalize(text, kind, lang):
             return opening[:-1] + ' data-search="' + escape(name, quote=True) + '">'
         text = re.sub(r'<article class="item"[^>]*>', search_data, text)
     if lang == 'am': text = text.replace('</span>, <em>', '</span>፣ <em>')
-    if lang == 'vi' and kind == 'index':
-        text = re.sub(r'<h1>.*?</h1>', '<h1><span data-time-greeting>Chào buổi sáng</span>.<br><em>Chăm chút</em> từng món ăn.</h1>', text, count=1, flags=re.S)
     return text
 
 sources = {kind: (ROOT / (kind + '.html')).read_text() for kind in ['index', 'menu']}

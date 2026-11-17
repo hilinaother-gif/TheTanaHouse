@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 88" fill="none">
+  <title>A plate and cutlery sketch</title>
+  <g stroke="#29473C" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 28c17 20 1 49-26 49-21 0-35-15-33-34 2-20 18-32 36-30 11 1 18 7 23 15Z"/>
+    <path d="M75 31c12 16 1 37-19 37-17 0-27-12-24-27 2-14 14-22 27-20 7 1 12 5 16 10Z" stroke-opacity=".5"/>
+    <path d="M7 17v15c0 10 12 10 12 0V17m-6 0v19m0 4-1 32M98 17c-6 9-9 19-8 28l8 2m0-30-1 55"/>
+  </g>
+  <g stroke="#C8AD75" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M47 57c4-9 12-16 20-21M52 50c-10-2-11-8-5-9 4 0 6 4 5 9Zm7-8c-4-9-1-14 3-10 2 3 0 7-3 10Zm3-2c6 4 12 0 11-4-1-4-7-2-11 4Z"/>
+  </g>
+</svg>

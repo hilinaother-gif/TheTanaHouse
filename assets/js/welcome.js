@@ -1,6 +1,6 @@
 // A small welcome, once per tab session, shared by every language and entry page.
 (function () {
-  const key = 'tana-welcome-seen';
+  const key = 'tana-welcome-classic-v3-seen';
   const lang = (document.documentElement.lang || 'en').split('-')[0];
   const words = (window.TANA_LOCALES[lang] || window.TANA_LOCALES.en).welcome;
   if (!words || typeof HTMLDialogElement === 'undefined' || !HTMLDialogElement.prototype.showModal) return;
@@ -15,12 +15,11 @@
   dialog.innerHTML = `
     <button class="welcome-close" type="button" data-welcome-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
     <div class="welcome-content">
-      <div class="welcome-mark" aria-hidden="true"><span class="welcome-halo"></span><img src="assets/img/logo-emblem.png" width="90" height="62" alt=""><span class="welcome-spark welcome-spark-one">✦</span><span class="welcome-spark welcome-spark-two">✧</span></div>
+      <div class="welcome-mark" aria-hidden="true"><img src="assets/img/logo.png" width="700" height="637" alt=""></div>
       <p class="welcome-eyebrow" data-welcome="eyebrow"></p>
       <h2 id="welcome-title" class="welcome-title" tabindex="-1"><span data-welcome="title"></span><em data-welcome="accent"></em></h2>
       <p class="welcome-saying" id="welcome-saying" data-welcome="saying"></p>
-      <p class="welcome-note" data-welcome="note"></p>
-      <div class="welcome-actions"><a class="btn btn-primary welcome-menu" data-welcome-menu><span data-welcome="menu"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><button class="welcome-dismiss" type="button" data-welcome-close data-welcome="dismiss"></button></div>
+      <div class="welcome-actions"><a class="btn btn-primary welcome-menu" data-welcome-menu><span data-welcome="menu"></span></a><button class="welcome-dismiss" type="button" data-welcome-close data-welcome="dismiss"></button></div>
       <p class="welcome-hours" data-welcome="hours"></p>
     </div>`;
   dialog.querySelectorAll('[data-welcome]').forEach(element => {

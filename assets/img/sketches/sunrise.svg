@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 88" fill="none">
+  <title>A sunrise over a gentle horizon</title>
+  <g stroke="#29473C" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 51c-1-28 43-29 43-1M17 53c14-4 25 3 39-1s25 4 40 0M26 61c17-4 40 4 60-1M36 69c13-2 27 2 40-1"/>
+  </g>
+  <g stroke="#C8AD75" stroke-width="1.65" stroke-linecap="round">
+    <path d="m56 8 1 11M29 18l7 8M14 36l12 3M82 18l-8 8M99 35l-12 4"/>
+  </g>
+</svg>

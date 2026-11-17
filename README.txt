@@ -1,6 +1,6 @@
 THE TANA HOUSE RESTAURANT WEBSITE
 =================================
-Open index.html in a browser. Food images are bundled locally; internet is needed for Google Fonts and map links.
+Open index.html in a browser. Food images and page fonts work locally; map links need internet. QR cards may load optional web fonts.
 
 Files
   index.html, menu.html           English pages
@@ -9,11 +9,11 @@ Files
   index-so.html, menu-so.html     Somali pages
   index-vi.html, menu-vi.html     Vietnamese pages
   qr-card.html                    Printable QR menu cards (not linked on the site; open it directly)
-  assets/css/styles.css      Peach, burnt orange, ochre and espresso palette
-  assets/css/menu.css        Menu browsing layout, category sidebar and responsive dish cards
-  assets/css/responsive.css  Fluid gutters, adaptive cards, tablet layouts and short-screen navigation
-  assets/js/main.js          Local-time greetings, opening status, mobile navigation, menu search and filters
-  assets/js/motion.js        One-time scroll reveals, staggered entrances and filtered-result motion
+  assets/css/styles.css      Warm paper palette, classic serif type and open page layouts
+  assets/css/menu.css        Menu browsing layout, category rail and responsive dish rows
+  assets/css/responsive.css  Fluid gutters, open mobile layouts and readable menu columns
+  assets/js/main.js          Opening status, language control, menu search, filters and category navigation
+  assets/js/motion.js        Gentle entrances, photograph reveals and filtered-result motion
   assets/js/languages.js     Greetings, opening status and result counts in all five languages
   assets/i18n/strings.tsv    Amharic, Somali and Vietnamese translation source
   scripts/build-translations.py  Rebuild translated pages after changes to the English pages
@@ -21,9 +21,8 @@ Files
   assets/img/logo*.png       Your logo: full, light (for dark backgrounds), emblem
 
 Quick edits (top of assets/js/main.js)
-  SPECIAL / SPECIAL_ES   the banner text (English / Spanish) at the top of every page (set to "" to hide it)
   HOURS     opening hours, used by the live "Open now" badge
-  TIMEZONE  restaurant timezone (America/Chicago); the greeting uses the visitor's device time
+  TIMEZONE  restaurant timezone (America/Chicago), used by opening status
 
 Before going live
   - The confirmed phone number is (612) 481-3306. Call buttons, contact links and restaurant structured data use +16124813306.
@@ -38,7 +37,6 @@ Photos
   Missing image references and external stock-image fallbacks have been removed.
   All menu items now have a matching image in both languages. New thumbnails are
   320 x 320 JPEGs, loaded lazily and displayed at 80px on desktop and 64px on phones.
-  The menu heading identifies them as AI-generated food illustrations.
   The 58 new images were generated with the built-in image_gen tool; their prompts
   are recorded in assets/img/dishes/generation-prompts.json.
 
@@ -71,54 +69,70 @@ QR menu cards
   (or type it in). Choose English, Spanish or both, then Print. Cards are 4 x 6 in, stickers 3 in.
   Spanish cards point to menu-es.html automatically.
 
-Generated food illustrations (November 2026): All 62 menu items now have thumbnails, including drinks and desserts. The original four images for Blueberry Pancakes, Denver Omelet, Classic Cheeseburger and Chicken Club are preserved. These are AI-generated illustrative images, not photographs of actual Tana House dishes. The menu heading and footer identify the images as illustrative. Update those notices once all images are actual restaurant photography.
+Generated food illustrations (November 2026): All 62 menu items now have thumbnails, including drinks and desserts. The original four images for Blueberry Pancakes, Denver Omelet, Classic Cheeseburger and Chicken Club are preserved. These are AI-generated illustrative images, not photographs of actual Tana House dishes.
 
-Design update (November 2026)
-  English and Spanish pages use a simplified hero, consistent food images, rounded
-  buttons, readable type, clearer menu prices and an always-visible mobile action bar.
-  The full-screen intro has been removed. Sections and food cards reveal once as
-  they enter the screen, with gentle hover/tap feedback and a brief photo entrance.
-  Motion respects reduced-motion settings, including changes during the visit.
-  Content is visible by default and no animation library is required.
-  Menu search ignores accents; filters can be combined with search and reset from
-  the empty state. All 62 dishes, prices and descriptions are preserved in each language.
+Page structure and visual direction (November 2026)
+  Inspired by the restrained composition of https://kingrestaurant.nyc/celebrate-at-king:
+  a warm paper background, centered original logo and navigation, modest serif
+  headings, thin dividers, outlined links and open photograph/text sections.
+  The homepage presents breakfast and lunch, four text-only house favourites,
+  a Mexican breakfast photograph, the kitchen story and useful visit details.
+  The footer stays compact on the same background. Repeated card labels, dark
+  feature panels, oversized page greetings and the fixed phone action bar have been
+  removed. Opening status, language switching and contact links remain.
 
-Menu refresh (November 2026)
-  The menu uses two-column dish cards on larger screens and a single column on phones.
-  Desktop categories stay in a sidebar; smaller screens get a swipeable category bar.
-  Category counts and section counts update with search and filters. Clear-search and
-  clear-filter buttons are available in the toolbar, and the category search button
-  returns keyboard focus to the search field. Small thumbnails and motion are retained.
+Menu layout
+  All 62 dish names, descriptions, prices, filter tags and original image references
+  remain in every language. The menu uses two columns of text on larger screens and
+  one on phones, with understated section headings and no visible dish thumbnails.
+  Search, filters, result counts, empty states and reset/clear controls remain active.
+  A horizontal category rail sticks to the top after the centered header scrolls away.
 
-Responsive layout
-  Pages adapt to narrow phones, tablets, desktop screens and larger default text.
-  Card columns depend on the available space. Tablet sections stack and narrow phone
-  favourites/footer sections use one column. Gutters account for device safe areas.
-  Header menus scroll within the available screen height. The mobile quick-action bar
-  becomes compact in landscape and stays out of the way of open menus and search.
+Typography and color
+  Page backgrounds use warm paper #FDFBF7, with dark ink and subtle forest green
+  links. The original gold-and-green logo is unchanged. Local Baskerville/Palatino/
+  Georgia serif stacks avoid a dependency on third-party font loading. Amharic uses
+  Kefa with Noto fallbacks. Page titles and section headings use the existing deep
+  forest green #142C25. Decorative pattern assets remain unused.
 
-Color refresh (November 2026)
-  The palette takes its direction from https://earthgirlcreative.com/: peach #F9E7C9,
-  burnt orange #82400C and ochre #D3962B, with espresso for dark sections.
-  Shared CSS color tokens keep the homepage, menu and all five languages consistent.
-  Menu controls, woven SVG details, browser theme colors and QR cards use the new palette.
-  Original logo artwork is preserved.
+Languages and responsive layout
+  All five editions share the same structure and styles. Rebuild Amharic, Somali and
+  Vietnamese pages with python3 scripts/build-translations.py after English edits;
+  Spanish remains its own source edition. Header links stay visible and can wrap on
+  narrow screens. The language menu, categories and filters scroll within the space
+  available. Gutters account for device safe areas; reduced-motion settings disable
+  smooth scrolling. Printed QR cards retain their original artwork and border.
 
-Ethiopian pattern details
-  Original tibeb-inspired stepped diamonds carry through every language.
-  Section breaks are clean, with no full-width woven divider bands.
-  Printed QR cards retain the small border in assets/img/tibeb-border.svg.
-  The light and dark section patterns use section-weave.svg and section-arches.svg.
-  Faint motifs fade out near section edges, leaving clear space around copy and dish images.
-  Decorative site patterns are hidden for printing and forced-color accessibility modes;
-  QR card bands remain in the printed cards.
-  Weaving reference: https://digitalcommons.unl.edu/tsaconf/168/
+Welcome popup
+  Every edition loads assets/js/welcome.js after the shared page scripts. A localized
+  welcome appears once per tab session, using the original logo, paper background,
+  deep green heading, fine border and outlined actions. Visitors can dismiss it with
+  the close button, secondary action, Escape or the backdrop. On menu pages its menu
+  action closes the popup and focuses search. Keyboard focus stays within the open
+  dialog, short screens can scroll inside it, and reduced motion is respected.
+  The page-level food-image notices have been removed in every language.
 
-Welcome and motion
-  The first homepage or menu opened in a tab shows a localized welcome once per session.
-  The original greeting reads: “May your coffee be warm, your plate be full, and your day
-  a little brighter.” Edit welcome strings in assets/js/languages.js.
-  assets/js/welcome.js handles the native dialog, close button, Escape, backdrop dismissal
-  and menu link. Visitors can continue immediately; the dialog never closes on a timer.
-  Page entrances begin after dismissal. Sections reveal on scroll, food photos ease into
-  place, and buttons/cards respond on hover. Reduced-motion preferences stop animations.
+Motion and welcome copy
+  The welcome saying reads: “Life’s too short for boring breakfasts. Pass the pancakes.”
+  All five locales have a matching playful line in assets/js/languages.js.
+  Every page loads motion.js after welcome.js. Page entrances begin after the welcome
+  closes. Sections fade and rise once, food images settle gently into place, and
+  restored menu results receive a short stagger. Buttons lift slightly on hover,
+  navigation underlines draw in, and photographs have a subtle hover zoom.
+  Content is visible without JavaScript, keyboard focus cancels obscuring motion,
+  and reduced-motion preferences stop active effects and disable CSS animations.
+
+Readability refinements
+  On screens up to 736px, the header uses a 112px logo, less vertical padding and
+  a smaller navigation gap. Homepage photography begins about 58px sooner on a
+  typical phone. Main paragraph text uses 17px, with 18px desktop introduction text.
+  The welcome keeps its title, pancake saying and actions; the extra generic
+  sentence has been removed from the template and all five locale dictionaries.
+
+Small sketches
+  Three original SVG line drawings in assets/img/sketches add restrained green-and-
+  gold accents: a plate at house favourites and the menu title, a coffee cup at the
+  kitchen story, and a sunrise above visit details. They stay small on phones and
+  leave the compact header, homepage introduction and welcome popup unchanged.
+  Empty alt text and aria-hidden mark them as decorative. The kitchen sketch joins
+  the existing gentle section entrances and respects reduced-motion preferences.
